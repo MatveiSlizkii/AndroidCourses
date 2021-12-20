@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentOne">
+
+    <TextView
+        android:id="@+id/expressionText"
+        android:layout_width="284dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/resultText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+
+        android:gravity="end|bottom"
+        android:lineSpacingExtra="-20dp"
+        android:textColor="@color/white"
+        android:textSize="55dp" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="284dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/linear_layout_five"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+
+        android:gravity="right"
+        android:textColor="@color/white"
+        android:textSize="55dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_layout_four"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clean"
+            style="@style/buttonGrey"
+            android:text="C" />
+
+
+        <Button
+            android:id="@+id/openBracket"
+            style="@style/buttonGrey"
+            android:text="(" />
+
+        <Button
+            android:id="@+id/closeBracket"
+            style="@style/buttonGrey"
+            android:text=")" />
+
+        <Button
+            android:id="@+id/divide"
+            style="@style/buttonOrange"
+            android:text="/" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_layout_three"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/seven"
+            style="@style/buttonDark"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/eight"
+            style="@style/buttonDark"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/nine"
+            style="@style/buttonDark"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/multiply"
+            style="@style/buttonOrange"
+            android:text="x" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_layout_two"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/four"
+            style="@style/buttonDark"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/five"
+            style="@style/buttonDark"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/six"
+            style="@style/buttonDark"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/minus"
+            style="@style/buttonOrange"
+            android:text="-" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_layout_one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/one"
+            style="@style/buttonDark"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/two"
+            style="@style/buttonDark"
+
+            android:text="2" />
+
+        <Button
+            android:id="@+id/three"
+            style="@style/buttonDark"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/plus"
+            style="@style/buttonOrange"
+
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_layout_zero"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/zero"
+            style="@style/buttonDark"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/dot"
+            style="@style/buttonDark"
+            android:text="," />
+
+        <Button
+            android:id="@+id/plus_minus"
+            style="@style/buttonGrey"
+            android:text="+/-" />
+
+        <Button
+            android:id="@+id/result"
+            style="@style/buttonOrange"
+            android:text="=" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_zero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+</RelativeLayout>
